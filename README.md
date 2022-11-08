@@ -21,7 +21,7 @@ Page created during the lesson "Tworzenie stron i aplikacji internetowych". Appr
 Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## Author
-👤 **Bartek**
+👤 **Bart0llo**
 
 * Website: https://bart0llo.dev
 * GitHub: [@Bart0llo](https://github.com/Bart0llo)
