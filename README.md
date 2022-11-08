@@ -1,6 +1,10 @@
 <div align="center">
     <h3>HTML basics</h3>
-    <p>School project of the basics of creating websites<p>
+    <p>
+    School project of the basics of creating websites
+    <br>
+    <a href="https://bart0llo.github.io/tsiai/"><strong>View page</strong></a>
+    </p>
     <hr />
 </div>
 
