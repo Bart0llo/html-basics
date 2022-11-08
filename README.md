@@ -18,7 +18,7 @@ Page created during the lesson "Tworzenie stron i aplikacji internetowych". Appr
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ## License
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the MIT License. See LICENSE for more information.
 
 ## Author
 👤 **Bart0llo**
