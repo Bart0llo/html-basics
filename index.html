@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praca - Bartłomiej Nowak</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <div class="title_container">
-        <div class="navbar_title">Znaczniki HTML</div>
+        <div class="title">Znaczniki HTML</div>
       </div>
       <div class="cards">
         <!-- Card -->
@@ -295,35 +295,33 @@
         </div>
       </div>
       <div class="title_container">
-        <div class="navbar_title">Formularz</div>
+        <div class="title">Formularz</div>
       </div>
+      <form action="#" method="post" class="form">
+        <label>Nazwisko</label>
+        <input type="text" name="nazwisko" maxlength="3" />
+        <div>
+          <input type="radio" name="radio" id="wartosc1" />Opcja 1
+          <input type="radio" name="radio" id="wartosc2" />Opcja 2
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox" id="wartość" /> Checkbox
+        </div>
+        <select name="select">
+          <option>Opcja 1</option>
+          <option>Opcja 2</option>
+        </select>
+        <select name="select" multiple>
+          <option>Opcja 1</option>
+          <option>Opcja 2</option>
+        </select>
+        <label>Hasło</label><input type="password" name="password" />
+        <textarea name="test" id="" cols="30" rows="10"></textarea>
+        <div>
+          <input type="submit" value="Wyślij" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
     </main>
-
-    <form action="#" method="post">
-      <label>Nazwisko</label>
-      <input type="text" name="nazwisko" size="50" maxlength="3" />
-      <br />
-      <input type="radio" name="radio" id="wartosc1" />Opcja 1
-      <input type="radio" name="radio" id="wartosc2" />Opcja 2
-      <br />
-      <input type="checkbox" name="checkbox" id="wartość" /> Opcja
-      <br />
-      <select name="select">
-        <option>Opcja 1</option>
-        <option>Opcja 2</option>
-      </select>
-      <br />
-      <select name="select" multiple>
-        <option>Opcja 1</option>
-        <option>Opcja 2</option>
-      </select>
-      <br />
-      <label>Hasło</label><input type="password" name="password" />
-      <br />
-      <textarea name="test" id="" cols="30" rows="10"></textarea>
-      <br />
-      <input type="submit" value="Wyślij" />
-      <input type="reset" value="Reset" />
-    </form>
   </body>
 </html>

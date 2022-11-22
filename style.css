@@ -22,7 +22,7 @@ body {
   text-align: center;
   margin: 20px;
 }
-.navbar_title {
+.title {
   padding: 15px;
   border-radius: 30px;
   background: linear-gradient(145deg, #ba0909, #dd0b0b);
@@ -79,6 +79,46 @@ main {
 }
 .marker::after {
   content: ">";
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2389da;
+  box-shadow: 10px 10px 10px #0e3757;
+  border-radius: 20px;
+  font-size: 26px;
+  padding: 40px;
+  margin-bottom: 20px;
+  gap: 5px;
+  text-align: center;
+}
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  color: #eee;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #212121;
+  font-size: small;
+  font-weight: bold;
+}
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  transform: scale(0.9);
 }
 @media only screen and (max-width: 1300px) {
   .cards {
