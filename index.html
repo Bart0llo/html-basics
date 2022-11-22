@@ -5,94 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praca - Bartłomiej Nowak</title>
-    <style>
-      :root {
-        --black: #000;
-        --red: #cf0a0a;
-        --orange: #dc5f00;
-        --white: #eee;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: var(--white);
-        color: var(--black);
-        overflow-x: hidden;
-      }
-      nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        font-size: 50px;
-      }
-      .navbar_title {
-        padding: 15px;
-        border-radius: 30px;
-        background: linear-gradient(145deg, #ba0909, #dd0b0b);
-        box-shadow: 5px 5px 10px #530404, -5px -5px 10px #ff1010;
-      }
-      main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-      }
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(auto, 1fr);
-        grid-column-gap: 80px;
-        grid-row-gap: 40px;
-        margin-bottom: 30px;
-      }
-      .card {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 20px;
-        border-radius: 20px;
-        background: linear-gradient(315deg, #c65600, #eb6600);
-        box-shadow: -5px -5px 10px #582600, 5px 5px 10px #ff9800;
-        width: 270px;
-        height: 120px;
-        transition: all 0.5s;
-        text-align: center;
-        overflow: hidden;
-      }
-      .example p {
-        color: var(--white);
-        margin-top: 10px;
-        font-size: 20px;
-        background-color: var(--black);
-        padding: 25px 60px;
-        border-radius: 20px;
-      }
-      .card:hover {
-        height: 270px;
-      }
-      .card .header {
-        margin: 10px;
-      }
-      .card .content {
-        font-size: 22px;
-      }
-      .marker::before {
-        content: "<";
-      }
-      .marker::after {
-        content: ">";
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav>
-      <div class="navbar_title">Znaczniki HTML</div>
-    </nav>
     <main>
+      <div class="title_container">
+        <div class="navbar_title">Znaczniki HTML</div>
+      </div>
       <div class="cards">
         <!-- Card -->
         <div class="card">
@@ -259,7 +178,7 @@
           <div class="content">Znacznik <span class="marker">img</span></div>
           <div class="example">
             <h1>Przykład</h1>
-            <p><img src="./1104.jpg" alt="Kaczor" height="60px" /></p>
+            <img src="./1104.jpg" alt="Kaczor" height="110px" />
           </div>
         </div>
         <!-- Card -->
@@ -375,6 +294,36 @@
           </div>
         </div>
       </div>
+      <div class="title_container">
+        <div class="navbar_title">Formularz</div>
+      </div>
     </main>
+
+    <form action="#" method="post">
+      <label>Nazwisko</label>
+      <input type="text" name="nazwisko" size="50" maxlength="3" />
+      <br />
+      <input type="radio" name="radio" id="wartosc1" />Opcja 1
+      <input type="radio" name="radio" id="wartosc2" />Opcja 2
+      <br />
+      <input type="checkbox" name="checkbox" id="wartość" /> Opcja
+      <br />
+      <select name="select">
+        <option>Opcja 1</option>
+        <option>Opcja 2</option>
+      </select>
+      <br />
+      <select name="select" multiple>
+        <option>Opcja 1</option>
+        <option>Opcja 2</option>
+      </select>
+      <br />
+      <label>Hasło</label><input type="password" name="password" />
+      <br />
+      <textarea name="test" id="" cols="30" rows="10"></textarea>
+      <br />
+      <input type="submit" value="Wyślij" />
+      <input type="reset" value="Reset" />
+    </form>
   </body>
 </html>
